@@ -26,6 +26,11 @@ mystring == "Ontario\nMining and\nForestry\nGroup"
 
 And that's pretty much it.
 
+## Install
+
+```sh
+npm install mstring
+```
 
 ## Format
 
