@@ -1,0 +1,22 @@
+{
+  "name": "mstring",
+  "version": "0.1.0",
+  "description": "Multi-line strings module for node.js",
+  "main": "mstring.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rjrodger/mstring.git"
+  },
+  "keywords": [
+    "multi",
+    "line",
+    "multiline",
+    "string",
+    "strings"
+  ],
+  "author": "Richard Rodger (@rjrodger)",
+  "license": "MIT"
+}
