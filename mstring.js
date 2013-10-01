@@ -7,21 +7,14 @@ module.exports = function(f){
     throw new Error(errmsg+f)
   }
 
-  // allow for whitespace-indented lines
-  var lines = f.toString().split('\n');
-  for (var i = 0; i < lines.length; ++i) {
-    lines[i] = lines[i].replace(/^\s+|\s+$/g, '');
-  }
-
-  var fs = lines.join('\n');
-  var m  = fs.match(/^function\s*\(\)\s*\{\s*\/\*\*\*\n([\s\S]*)\n\*\*\*\/\s*\}$/) 
+  var fs = f.toString();
+  var m  = fs.match(/^function\s*\(\)\s*\{\s*\/\*\*\*\n([\s\S]*)\n(\s*)\*\*\*\/\s*\}$/) 
 
   if( m && _.isString(m[1]) ) {
     return m[1]
   }
   else throw new Error(errmsg+f)
 }
-
 
 var _ = {};
 _.isFunction = function(obj) {
