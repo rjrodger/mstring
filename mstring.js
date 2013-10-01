@@ -8,7 +8,8 @@ module.exports = function(f){
   }
 
   var fs = f.toString()
-  var m  = fs.match(/^function\s*\(\)\s*\{\s*\/\*\*\*\n([\s\S]*)\n\*\*\*\/\s*\}$/) 
+  var m  = fs.match(/^function\s*\(\)\s*\{\s*\/\*\*\*\n*([\s\S]*)\n*\*\*\*\/\s*\}$/);
+  
   if( m && _.isString(m[1]) ) {
     return m[1]
   }
