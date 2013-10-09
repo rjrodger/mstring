@@ -45,6 +45,17 @@ b
 }
 
 
+var indent1 = M(function(){/***
+                           hello
+                           there
+                           ***/})
+
+var indent2 = M(function(){/***
+
+                           new-lines
+
+                           ***/})
+
 for( var t in a_b ) {
   assert.equal("a\nb",a_b[t])
 }
@@ -52,6 +63,12 @@ for( var t in a_b ) {
 for( var t in _a_b_ ) {
   assert.equal("\na\nb\n",_a_b_[t])
 }
+
+assert.equal('hello\nthere',indent1)
+assert.equal('\nnew-lines\n',indent2)
+
+
+
 
 
 try {
