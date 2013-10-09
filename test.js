@@ -4,36 +4,25 @@ var assert = require('assert')
 var M = require('./mstring')
 
 var a_b = {
-
-  a:
-M(function(){/***
+    a: M(function(){/***
 a
 b
-***/})
-
-  ,b:
-M(function(){
+***/}),
+    b: M(function(){
 /***
 a
 b
-***/
-})
-
-}
-
+***/})
+};
 
 var _a_b_ = {
-
-  a:
-M(function(){/***
+  a: M(function(){/***
 
 a
 b
 
-***/})
-
-  ,b:
-M(function(){
+***/}),
+  b: M(function(){
 /***
 
 a
