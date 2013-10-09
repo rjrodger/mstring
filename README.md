@@ -9,12 +9,13 @@ Just do this:
 ```JavaScript
 var M = require('mstring')
 
-var mystring = M(function(){/***
-Ontario
-Mining and
-Forestry
-Group
-***/})
+var mystring = M(function(){
+  /***
+  Ontario
+  Mining and
+  Forestry
+  Group
+  ***/})
 ```
 
 to get
@@ -36,7 +37,7 @@ npm install mstring
 
 An empty anonymous function, containing a single multi-line comment
 block. The comment block should start and end with <code>/***</code>
-and <code>***/</code>. The first and last newlines of the comment are ignored.
+and <code>***/</code>. The first and last newlines of the comment are ignored, as is any indentation.
 
 
 ## How it Works

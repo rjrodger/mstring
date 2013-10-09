@@ -1,6 +1,6 @@
 {
   "name": "mstring",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Multi-line strings module for node.js",
   "main": "mstring.js",
   "scripts": {
@@ -18,5 +18,10 @@
     "strings"
   ],
   "author": "Richard Rodger (@rjrodger)",
+  "contributors": [
+    "Richard Rodger (http://richardrodger.com/)",
+    "David Kaye (@dfkaye)",
+    "Dominic Tarr"
+  ],
   "license": "MIT"
 }

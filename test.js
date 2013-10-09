@@ -45,6 +45,16 @@ var indent2 = M(function(){/***
 
                            ***/})
 
+
+var mystring = M(function(){
+  /***
+  Ontario
+  Mining and
+  Forestry
+  Group
+  ***/})
+
+
 for( var t in a_b ) {
   assert.equal("a\nb",a_b[t])
 }
@@ -55,6 +65,8 @@ for( var t in _a_b_ ) {
 
 assert.equal('hello\nthere',indent1)
 assert.equal('\nnew-lines\n',indent2)
+
+assert.equal("Ontario\nMining and\nForestry\nGroup",mystring)
 
 
 
