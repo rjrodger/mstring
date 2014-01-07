@@ -45,7 +45,7 @@ and <code>***/</code>. The first and last newlines of the comment are ignored, a
 In Node.js, you can call the <code>.toString</code> method of a
 function, and it will give you the source code of the function
 definition, including any comments. A regular expression grabs the
-content of the comment.
+content of the comment. 
 
 Yes, it's a hack. Inspired by a throwaway comment from [Dominic Tarr](http://dominictarr.com/).
 

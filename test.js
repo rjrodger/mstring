@@ -55,6 +55,15 @@ var mystring = M(function(){
   ***/})
 
 
+
+var mangled = M(function(){var $_a = "b";try{/***
+  X
+  Y
+  Z
+  ***/}catch(e){"eek!!"}})
+
+
+
 for( var t in a_b ) {
   assert.equal("a\nb",a_b[t])
 }
@@ -68,7 +77,7 @@ assert.equal('\nnew-lines\n',indent2)
 
 assert.equal("Ontario\nMining and\nForestry\nGroup",mystring)
 
-
+assert.equal("X\nY\nZ",mangled)
 
 
 

@@ -8,12 +8,12 @@ module.exports = function(f){
   }
 
   var fs = f.toString()
-  var m  = fs.match(/^function\s*\(\)\s*\{\s*\/\*\*\*([\s\S]*)(\n\s*)\*\*\*\/\s*\}$/);
+  var m  = fs.match(/^function\s*\(\)\s*\{(\s|.)*?\/\*\*\*([\s\S]*)(\n\s*)\*\*\*\/(\s|.)*?\}$/);
 
-  if( m && _.isString(m[1]) ) {
-    var out = m[1]
-    if( 1 < m[2].length ) {
-      out = out.replace(new RegExp(m[2],'g'),'\n')
+  if( m && _.isString(m[2]) ) {
+    var out = m[2]
+    if( 1 < m[3].length ) {
+      out = out.replace(new RegExp(m[3],'g'),'\n')
     }
     out = out.replace(/^\n/,'')
     return out;
